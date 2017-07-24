@@ -15,8 +15,10 @@ int main()
 	while (1)
 	{
 		zmq_msg_t request;
+		zmq_msg_init(&request);
+		zmq_msg_recv(&request, responder, 0);
 
 	}
-    return 0;
+	return 0;
 }
 
